@@ -1,4 +1,4 @@
-def call(){
+def call(string name,string tag){
    echo "Building Image"
-   sh "docker build -t backend:latest ."
+   sh "docker build -t ${name}:${tag} ."
 }
